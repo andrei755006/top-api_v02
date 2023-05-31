@@ -10,8 +10,8 @@ import { ConfigModule } from '@nestjs/config';
     ConfigModule.forRoot(),
     AuthModule,
     TopPageModule,
-    ProductModule,
+    ProductModule, 
     ReviewModule
   ],
 })
-export class AppModule { }
+export class AppModule {}
