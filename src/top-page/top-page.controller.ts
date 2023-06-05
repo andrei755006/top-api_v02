@@ -14,7 +14,7 @@ export class TopPageController {
 
 	@Get(':id')
 	async get(@Param('id') id: string) {
-		this.configService.get('TEST')
+		this.configService.get('TEST');
 	}
 
 	@Delete(':id')

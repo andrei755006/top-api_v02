@@ -5,15 +5,15 @@ import { TypegooseModule } from '@m8a/nestjs-typegoose';
 
 @Module({
   controllers: [ProductController],
-    imports: [
-    TypegooseModule.forFeature([
-      {
-        typegooseClass: ProductModel,
-        schemaOptions: {
-          collection: 'Product'
-        }
-      }
-    ])
+	imports: [
+	TypegooseModule.forFeature([
+		{
+		typegooseClass: ProductModel,
+		schemaOptions: {
+			collection: 'Product'
+		}
+		}
+	])
   ]
 })
 export class ProductModule {}

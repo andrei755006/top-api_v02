@@ -6,15 +6,15 @@ import { TopPageModel } from './top-page.model';
 
 @Module({
   imports: [
-    ConfigModule,
-        TypegooseModule.forFeature([
-      {
-        typegooseClass: TopPageModel,
-        schemaOptions: {
-          collection: 'TopPage'
-        }
-      }
-    ])
+	ConfigModule,
+		TypegooseModule.forFeature([
+		{
+		typegooseClass: TopPageModel,
+		schemaOptions: {
+			collection: 'TopPage'
+		}
+		}
+	])
   ],
   controllers: [TopPageController],
   providers: [ConfigService],

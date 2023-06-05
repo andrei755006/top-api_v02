@@ -6,7 +6,7 @@ export const getMongoConfig =async (configService: ConfigService): Promise<Typeg
 		uri: getMongoString(configService),
 		...getMongoOptions()
 	};
-}
+};
 
 const getMongoString = (configService: ConfigService) => 
 	'mongodb://' +
